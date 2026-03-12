@@ -11,8 +11,9 @@ export default function CryptoSearchForm() {
           className="field__select"
           name="cryptoCurrency"
           id="cryptoCurrency"
+          defaultValue=""
         >
-          <option value="" disabled selected>
+          <option value="" disabled>
             -- Seleccione una opción --
           </option>
         </select>
@@ -22,8 +23,13 @@ export default function CryptoSearchForm() {
         <label className="field__label" htmlFor="currency">
           Moneda
         </label>
-        <select className="field__select" name="currency" id="currency">
-          <option value="" disabled selected>
+        <select
+          className="field__select"
+          name="currency"
+          id="currency"
+          defaultValue=""
+        >
+          <option value="" disabled>
             -- Seleccione una opción --
           </option>
           {currencies.map((currency) => (
