@@ -1,0 +1,27 @@
+:root {
+  --white: #fff;
+  --primary: #61ecbc;
+  --black: #182339;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url("/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+}
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
