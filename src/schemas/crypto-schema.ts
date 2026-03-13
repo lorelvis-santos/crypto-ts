@@ -24,3 +24,8 @@ export const CryptoCurrenciesResponseSchema = z
   .transform((val) => ({
     list: val.LIST,
   }));
+
+export const PairSchema = z.object({
+  currency: z.string(),
+  cryptocurrency: z.string(),
+});
