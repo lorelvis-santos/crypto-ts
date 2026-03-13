@@ -4,16 +4,16 @@ import { devtools } from "zustand/middleware";
 import { getCryptos } from "../services/crypto.service";
 
 type CryptoStore = {
-  cryptoCurrencies: Crypto[];
+  cryptocurrencies: Crypto[];
   fetchCryptos: () => Promise<void>;
 };
 
 export const useCryptoStore = create<CryptoStore>()(
   devtools((set) => ({
-    cryptoCurrencies: [],
+    cryptocurrencies: [],
     fetchCryptos: async () => {
-      const cryptoCurrencies = await getCryptos();
-      set(() => ({ cryptoCurrencies }));
+      const cryptocurrencies = await getCryptos();
+      set(() => ({ cryptocurrencies }));
     },
   })),
 );
